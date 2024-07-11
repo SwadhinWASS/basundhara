@@ -1,0 +1,42 @@
+.homeCard {
+    font-family: 'Poppins';
+    // box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    background-color: #fff;
+
+    .homeCard_top {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px;
+
+        h1 {
+            font-size: 40px;
+            color: #989898;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .homeCard_bottom {
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+
+        p {
+            font-size: 14px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+
+        }
+    }
+}

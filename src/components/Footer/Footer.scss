@@ -1,0 +1,97 @@
+footer {
+    background-color: #14004f;
+    padding: 20px 5%;
+    font-family: 'Poppins';
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    p {
+        color: #ffbe83;
+    }
+
+    .top {
+        display: flex;
+        align-items: flex-start;
+
+        .left {
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+
+            a{
+                img{
+                    width: 150px;
+                }
+            }
+        }
+
+        .right {
+            width: 75%;
+            display: flex;
+            align-items: flex-start;
+
+            // justify-content: space-between;
+            .box {
+                width: 33.3%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 15px;
+
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+                    li {
+                        list-style-type: none;
+                        color: #fff;
+                        font-size: 14px;
+                        text-align: center;
+
+                        a {
+                            color: #fff;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .bottom{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // gap: 50px;
+
+        a{
+            text-decoration: none;
+            color: #ffbe83;
+            padding: 0 50px;
+            border-right: 2px solid #ffbe83;
+        }
+        a:last-child{
+            border: none;
+        }
+    }
+}
+
+.copyright{
+    background-color: #ffbe83;
+    font-family: 'Poppins';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 0;
+    color: #14004f;
+    font-weight: 500;
+    a{
+        text-decoration: none;
+        color: #14004f;
+    }
+}

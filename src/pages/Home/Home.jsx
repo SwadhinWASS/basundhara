@@ -1,5 +1,6 @@
 import './Home.scss';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { NavLink } from 'react-router-dom';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
@@ -117,27 +118,27 @@ const Home = () => {
 
     const pdfData = [
         {
-            id:1,
+            id: 1,
             title: 'CORPORATE BROCHURE',
             image: pdf,
         },
         {
-            id:2,
+            id: 2,
             title: 'CORPORATE BROCHURE',
             image: pdf,
         },
         {
-            id:3,
+            id: 3,
             title: 'CORPORATE BROCHURE',
             image: pdf,
         }
-        ,{
-            id:4,
+        , {
+            id: 4,
             title: 'CORPORATE BROCHURE',
             image: pdf,
         }
-        ,{
-            id:5,
+        , {
+            id: 5,
             title: 'CORPORATE BROCHURE',
             image: pdf,
         }
@@ -151,7 +152,7 @@ const Home = () => {
             <div className="container">
                 <section className='slider'>
                     <div className="left">
-                        <a href="" className='home'>HOME</a>
+                        <NavLink to={'/'} className={({ isActive }) => (isActive ? 'navActive' : 'home')}>HOME</NavLink>
                         <div className="number">
                             <img src={dial} alt="" />(+91) 33 4039 4600
                         </div>
@@ -195,24 +196,34 @@ const Home = () => {
                             className="mySwiper"
                         >
                             <SwiperSlide className='slide1 slide'>
-                                <h2>LET THIS WORLD <br /> <span>BEYOUND</span> IMAGINATION</h2>
-                                <p>Change is an opportunity! We want to lead people towards durable solutions and designs that enhance feelings of closeness, and hopefully, happiness.</p>
+                                <div className="slide_content">
+                                    <h2>LET THIS WORLD <br /> <span>BEYOUND</span> IMAGINATION</h2>
+                                    <p>Change is an opportunity! We want to lead people towards durable solutions and designs that enhance feelings of closeness, and hopefully, happiness.</p>
+                                </div>
                             </SwiperSlide>
                             <SwiperSlide className='slide2 slide'>
-                                <h2>LET THIS WORLD <br /> <span>BEYOUND</span> IMAGINATION</h2>
-                                <p>Change is an opportunity! We want to lead people towards durable solutions and designs that enhance feelings of closeness, and hopefully, happiness.</p>
+                                <div className="slide_content">
+                                    <h2>LET THIS WORLD <br /> <span>BEYOUND</span> IMAGINATION</h2>
+                                    <p>Change is an opportunity! We want to lead people towards durable solutions and designs that enhance feelings of closeness, and hopefully, happiness.</p>
+                                </div>
                             </SwiperSlide>
                             <SwiperSlide className='slide3 slide'>
-                                <h2>LET THIS WORLD <br /> <span>BEYOUND</span> IMAGINATION</h2>
-                                <p>Change is an opportunity! We want to lead people towards durable solutions and designs that enhance feelings of closeness, and hopefully, happiness.</p>
+                                <div className="slide_content">
+                                    <h2>LET THIS WORLD <br /> <span>BEYOUND</span> IMAGINATION</h2>
+                                    <p>Change is an opportunity! We want to lead people towards durable solutions and designs that enhance feelings of closeness, and hopefully, happiness.</p>
+                                </div>
                             </SwiperSlide>
                             <SwiperSlide className='slide2 slide'>
-                                <h2>LET THIS WORLD <br /> <span>BEYOUND</span> IMAGINATION</h2>
-                                <p>Change is an opportunity! We want to lead people towards durable solutions and designs that enhance feelings of closeness, and hopefully, happiness.</p>
+                                <div className="slide_content">
+                                    <h2>LET THIS WORLD <br /> <span>BEYOUND</span> IMAGINATION</h2>
+                                    <p>Change is an opportunity! We want to lead people towards durable solutions and designs that enhance feelings of closeness, and hopefully, happiness.</p>
+                                </div>
                             </SwiperSlide>
                             <SwiperSlide className='slide3 slide'>
-                                <h2>LET THIS WORLD <br /> <span>BEYOUND</span> IMAGINATION</h2>
-                                <p>Change is an opportunity! We want to lead people towards durable solutions and designs that enhance feelings of closeness, and hopefully, happiness.</p>
+                                <div className="slide_content">
+                                    <h2>LET THIS WORLD <br /> <span>BEYOUND</span> IMAGINATION</h2>
+                                    <p>Change is an opportunity! We want to lead people towards durable solutions and designs that enhance feelings of closeness, and hopefully, happiness.</p>
+                                </div>
                             </SwiperSlide>
                             <div className="arrows">
                                 <div className="pre">&larr;  PREV</div>
@@ -395,7 +406,7 @@ const Home = () => {
                         }
                     </div>
                     <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis auteUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
             </div>
         </>
